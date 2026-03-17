@@ -4,6 +4,12 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres_kafka_app_db
+    username: kafka_user_app
+    password: password
+
+
+
+  kafka:
+    producer:
+      bootstrap-address: localhost:9092
