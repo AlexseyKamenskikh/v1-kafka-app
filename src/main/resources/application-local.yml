@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: ${KAFKA_APP_DB_URL:jdbc:postgresql://localhost:5432/postgres_kafka_app_db}
-    username: ${KAFKA_APP_DB_USER:kafka_user_app}
-    password: ${KAFKA_APP_DB_PASSWORD:password}
+    url: jdbc:postgresql://localhost:5432/postgres_kafka_app_db?currentSchema=kafka_app
+    username: kafka_user_app
+    password: password
 
   flyway:
     enabled: true
